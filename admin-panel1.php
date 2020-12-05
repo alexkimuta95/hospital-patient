@@ -433,6 +433,67 @@ if(isset($_POST['docsub1']))
       </div>
       </div>
 
+      <!-- refer  -->
+      <div class="tab-pane fade" id="list-ref" role="tabpanel" aria-labelledby="list-ref-list">
+
+<div class="col-md-8">
+
+ <div class="row">
+ 
+
+ 
+       <table class="table table-hover">
+         <thead>
+           <tr>
+           <th scope="col">New Doctor</th>
+             <th scope="col">Patient ID</th>
+             <th scope="col">Appointment ID</th>
+             <th scope="col">First Name</th>
+             <th scope="col">Last Name</th>
+             <th scope="col">Appointment Date</th>
+             <th scope="col">Appointment Time</th>
+             <th scope="col">Comments</th>
+           </tr>
+         </thead>
+         <tbody>
+           <?php 
+             $con=mysqli_connect("localhost","root","","myhmsdb");
+             global $con;
+             $query = "select * from refer";
+             $result = mysqli_query($con,$query);
+             while ($row = mysqli_fetch_array($result)){
+               $doctor = $row['doctor'];
+               $pid = $row['pid'];
+               $ID = $row['ID'];
+               $fname = $row['fname'];
+               $lname = $row['lname'];
+               $appdate = $row['appdate'];
+               $apptime = $row['apptime'];
+               $pres = $row['comments'];
+
+               
+               echo "<tr>
+                 <td>$doctor</td>
+                 <td>$pid</td>
+                 <td>$ID</td>
+                 <td>$fname</td>
+                 <td>$lname</td>
+                 <td>$appdate</td>
+                 <td>$apptime</td>
+                 <td>$comments</td>
+               </tr>";
+             }
+
+           ?>
+         </tbody>
+       </table>
+ <br>
+</div>
+</div>
+</div>
+
+      <!-- refer -->
+
 
 
 
