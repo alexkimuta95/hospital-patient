@@ -5,43 +5,43 @@
 
 a:hover,
 a:focus {
-    color: #299dcc;
+    color: teal;
 }
 
 
 .con1 > div, .con2 > div, .con3 > div { 
-	background-color: #299dcc;
+	background-color: teal;
 }
 
 .scrollup:hover {
-	background: #299dcc;
+	background: teal;
 }
 
 
 /* service */
 
 .service-icon span {
-	color: #299dcc;
+	color: teal;
 }
 
 
 
 /* button */
 .btn-skin {
-  background-color: #299dcc;
-  border-color: #299dcc;
+  background-color: teal;
+  border-color: teal;
 }
 
 
 /* top */
 .top-area {
-	background: #0d8ebd;
+	background: teal;
 }
 
 /* menu */
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	color: #0d8ebd;
+	color: teal;
 }
 .navbar-custom.top-nav-collapse .nav li a:hover,
 .navbar-custom .nav li a:hover,

@@ -67,18 +67,18 @@ CREATE TABLE `appointmenttb` (
 --
 
 INSERT INTO `appointmenttb` (`pid`, `ID`, `fname`, `lname`, `gender`, `email`, `contact`, `doctor`, `docFees`, `appdate`, `apptime`, `userStatus`, `doctorStatus`) VALUES
-(4, 1, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Ganesh', 550, '2020-02-14', '10:00:00', 1, 0),
-(4, 2, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Dinesh', 700, '2020-02-28', '10:00:00', 0, 1),
-(4, 3, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Amit', 1000, '2020-02-19', '03:00:00', 0, 1),
-(11, 4, 'Shraddha', 'Kapoor', 'Female', 'shraddha@gmail.com', '9768946252', 'ashok', 500, '2020-02-29', '20:00:00', 1, 1),
-(4, 5, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Dinesh', 700, '2020-02-28', '12:00:00', 1, 1),
-(4, 6, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Ganesh', 550, '2020-02-26', '15:00:00', 0, 1),
-(2, 8, 'Alia', 'Bhatt', 'Female', 'alia@gmail.com', '8976897689', 'Ganesh', 550, '2020-03-21', '10:00:00', 1, 1),
-(5, 9, 'Gautam', 'Shankararam', 'Male', 'gautam@gmail.com', '9070897653', 'Ganesh', 550, '2020-03-19', '20:00:00', 1, 0),
-(4, 10, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Ganesh', 550, '0000-00-00', '14:00:00', 1, 0),
-(4, 11, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Dinesh', 700, '2020-03-27', '15:00:00', 1, 1),
-(9, 12, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'Kumar', 800, '2020-03-26', '12:00:00', 1, 1),
-(9, 13, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'Tiwary', 450, '2020-03-26', '14:00:00', 1, 1);
+(4, 1, 'keith', 'bundi', 'Male', 'keithbundi0@gmail.com', '0738489464', 'juma', 550, '2020-02-14', '10:00:00', 1, 0),
+(4, 2, 'keith', 'bundi', 'Male', 'keithbundi0@gmail.com', '0738489464', 'naliaka', 700, '2020-02-28', '10:00:00', 0, 1),
+(4, 3, 'keith', 'bundi', 'Male', 'keithbundi0@gmail.com', '0738489464', 'njoro', 1000, '2020-02-19', '03:00:00', 0, 1),
+(11, 4, 'caroline', 'mate', 'Female', 'caroline@gmail.com', '0768946252', 'kamau', 500, '2020-02-29', '20:00:00', 1, 1),
+(4, 5, 'keith', 'bundi', 'Male', 'keithbundi0@gmail.com', '0738489464', 'naliaka', 700, '2020-02-28', '12:00:00', 1, 1),
+(4, 6, 'keith', 'bundi', 'Male', 'keithbundi0@gmail.com', '0738489464', 'juma', 550, '2020-02-26', '15:00:00', 0, 1),
+(2, 8, 'alice', 'njoki', 'Female', 'alice@gmail.com', '8976897689', 'juma', 550, '2020-03-21', '10:00:00', 1, 1),
+(5, 9, 'gary', 'yegon', 'Male', 'gary@gmail.com', '0770897653', 'juma', 550, '2020-03-19', '20:00:00', 1, 0),
+(4, 10, 'keith', 'bundi', 'Male', 'keithbundi0@gmail.com', '0738489464', 'juma', 550, '0000-00-00', '14:00:00', 1, 0),
+(4, 11, 'keith', 'bundi', 'Male', 'keithbundi0@gmail.com', '0738489464', 'naliaka', 700, '2020-03-27', '15:00:00', 1, 1),
+(9, 12, 'William', 'Blake', 'Male', 'william@gmail.com', '0183619153', 'nkatha', 800, '2020-03-26', '12:00:00', 1, 1),
+(9, 13, 'William', 'Blake', 'Male', 'william@gmail.com', '0183619153', 'moha', 450, '2020-03-26', '14:00:00', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -98,15 +98,15 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`name`, `email`, `contact`, `message`) VALUES
-('Anu', 'anu@gmail.com', '7896677554', 'Hey Admin'),
-(' Viki', 'viki@gmail.com', '9899778865', 'Good Job, Pal'),
-('Ananya', 'ananya@gmail.com', '9997888879', 'How can I reach you?'),
-('Aakash', 'aakash@gmail.com', '8788979967', 'Love your site'),
-('Mani', 'mani@gmail.com', '8977768978', 'Want some coffee?'),
-('Karthick', 'karthi@gmail.com', '9898989898', 'Good service'),
-('Abbis', 'abbis@gmail.com', '8979776868', 'Love your service'),
-('Asiq', 'asiq@gmail.com', '9087897564', 'Love your service. Thank you!'),
-('Jane', 'jane@gmail.com', '7869869757', 'I love your service!');
+('ann', 'ann@gmail.com', '0796677554', 'Hey Admin'),
+(' victoria', 'victoria@gmail.com', '0720778865', 'Good Job, Pal'),
+('alicia', 'alicia@gmail.com', '0706888879', 'How can I reach you?'),
+('alex', 'alex@gmail.com', '0756979967', 'Love your site'),
+('lezan', 'lezan@gmail.com', '0779768978', 'Want some coffee?'),
+('ariana', 'ariana@gmail.com', '0798989898', 'Good service'),
+('kevin', 'kevin@gmail.com', '0779776868', 'Love your service'),
+('asega', 'asega@gmail.com', '0787897564', 'Love your service. Thank you!'),
+('Jane', 'jane@gmail.com', '0769869757', 'I love your service!');
 
 -- --------------------------------------------------------
 
@@ -127,14 +127,14 @@ CREATE TABLE `doctb` (
 --
 
 INSERT INTO `doctb` (`username`, `password`, `email`, `spec`, `docFees`) VALUES
-('ashok', 'ashok123', 'ashok@gmail.com', 'General', 500),
-('arun', 'arun123', 'arun@gmail.com', 'Cardiologist', 600),
-('Dinesh', 'dinesh123', 'dinesh@gmail.com', 'General', 700),
-('Ganesh', 'ganesh123', 'ganesh@gmail.com', 'Pediatrician', 550),
-('Kumar', 'kumar123', 'kumar@gmail.com', 'Pediatrician', 800),
-('Amit', 'amit123', 'amit@gmail.com', 'Cardiologist', 1000),
-('Abbis', 'abbis123', 'abbis@gmail.com', 'Neurologist', 1500),
-('Tiwary', 'tiwary123', 'tiwary@gmail.com', 'Pediatrician', 450);
+('kamau', 'kamau123', 'kamau@gmail.com', 'General', 500),
+('koech', 'koech123', 'koech@gmail.com', 'Cardiologist', 600),
+('naliaka', 'naliaka123', 'naliaka@gmail.com', 'General', 700),
+('juma', 'juma123', 'juma@gmail.com', 'Pediatrician', 550),
+('nkatha', 'nkatha123', 'nkatha@gmail.com', 'Pediatrician', 800),
+('njoro', 'njoro123', 'njoro@gmail.com', 'Cardiologist', 1000),
+('mutua', 'mutua123', 'mutua@gmail.com', 'Neurologist', 1500),
+('moha', 'moha123', 'moha@gmail.com', 'Pediatrician', 450);
 
 -- --------------------------------------------------------
 
@@ -158,17 +158,17 @@ CREATE TABLE `patreg` (
 --
 
 INSERT INTO `patreg` (`pid`, `fname`, `lname`, `gender`, `email`, `contact`, `password`, `cpassword`) VALUES
-(1, 'Ram', 'Kumar', 'Male', 'ram@gmail.com', '9876543210', 'ram123', 'ram123'),
-(2, 'Alia', 'Bhatt', 'Female', 'alia@gmail.com', '8976897689', 'alia123', 'alia123'),
-(3, 'Shahrukh', 'khan', 'Male', 'shahrukh@gmail.com', '8976898463', 'shahrukh123', 'shahrukh123'),
-(4, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'kishan123', 'kishan123'),
-(5, 'Gautam', 'Shankararam', 'Male', 'gautam@gmail.com', '9070897653', 'gautam123', 'gautam123'),
-(6, 'Sushant', 'Singh', 'Male', 'sushant@gmail.com', '9059986865', 'sushant123', 'sushant123'),
-(7, 'Nancy', 'Deborah', 'Female', 'nancy@gmail.com', '9128972454', 'nancy123', 'nancy123'),
-(8, 'Kenny', 'Sebastian', 'Male', 'kenny@gmail.com', '9809879868', 'kenny123', 'kenny123'),
-(9, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'william123', 'william123'),
-(10, 'Peter', 'Norvig', 'Male', 'peter@gmail.com', '9609362815', 'peter123', 'peter123'),
-(11, 'Shraddha', 'Kapoor', 'Female', 'shraddha@gmail.com', '9768946252', 'shraddha123', 'shraddha123');
+(1, 'ian', 'kiio', 'Male', 'ian@gmail.com', '0776543210', 'ian123', 'ian123'),
+(2, 'alice', 'njoki', 'Female', 'alice@gmail.com', '0776897689', 'alice123', 'alice123'),
+(3, 'shadrack', 'ngetich', 'Male', 'shadrack@gmail.com', '0776898463', 'shadrack123', 'shadrack123'),
+(4, 'keith', 'bundi', 'Male', 'keithbundi0@gmail.com', '0738489464', 'keith123', 'keith123'),
+(5, 'gary', 'yegon', 'Male', 'gary@gmail.com', '0770897653', 'gary123', 'gary123'),
+(6, 'stanley', 'sugut', 'Male', 'stanley@gmail.com', '0759986865', 'stanley123', 'stanley123'),
+(7, 'nancy', 'mwai', 'Female', 'nancy@gmail.com', '0728972454', 'nancy123', 'nancy123'),
+(8, 'ken', 'keter', 'Male', 'ken@gmail.com', '0709879868', 'ken123', 'ken123'),
+(9, 'William', 'Blake', 'Male', 'william@gmail.com', '0783619153', 'william123', 'william123'),
+(10, 'peter', 'ndolo', 'Male', 'peter@gmail.com', '0709362815', 'peter123', 'peter123'),
+(11, 'susan', 'mengich', 'Female', 'susan@gmail.com', '0768946252', 'susan123', 'susan123');
 
 -- --------------------------------------------------------
 
@@ -189,15 +189,33 @@ CREATE TABLE `prestb` (
   `prescription` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `refer`
+--
+
+CREATE TABLE `refer` (
+  `doctor` varchar(50) NOT NULL,
+  `pid` int(11) NOT NULL,
+  `ID` int(11) NOT NULL,
+  `fname` varchar(50) NOT NULL,
+  `lname` varchar(50) NOT NULL,
+  `appdate` date NOT NULL,
+  `apptime` time NOT NULL,
+  `comments` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Dumping data for table `prestb`
 --
 
 INSERT INTO `prestb` (`doctor`, `pid`, `ID`, `fname`, `lname`, `appdate`, `apptime`, `disease`, `allergy`, `prescription`) VALUES
-('Dinesh', 4, 11, 'Kishan', 'Lal', '2020-03-27', '15:00:00', 'Cough', 'Nothing', 'Just take a teaspoon of Benadryl every night'),
-('Ganesh', 2, 8, 'Alia', 'Bhatt', '2020-03-21', '10:00:00', 'Severe Fever', 'Nothing', 'Take bed rest'),
-('Kumar', 9, 12, 'William', 'Blake', '2020-03-26', '12:00:00', 'Sever fever', 'nothing', 'Paracetamol -> 1 every morning and night'),
-('Tiwary', 9, 13, 'William', 'Blake', '2020-03-26', '14:00:00', 'Cough', 'Skin dryness', 'Intake fruits with more water content');
+('naliaka', 4, 11, 'keith', 'bundi', '2020-03-27', '15:00:00', 'Cough', 'Nothing', 'Just take a teaspoon of Benadryl every night'),
+('juma', 2, 8, 'alicia', 'njoki', '2020-03-21', '10:00:00', 'Severe Fever', 'Nothing', 'Take bed rest'),
+('nkatha', 9, 12, 'William', 'Blake', '2020-03-26', '12:00:00', 'Sever fever', 'nothing', 'Paracetamol -> 1 every morning and night'),
+('moha', 9, 13, 'William', 'Blake', '2020-03-26', '14:00:00', 'Cough', 'Skin dryness', 'Intake fruits with more water content');
 
 --
 -- Indexes for dumped tables

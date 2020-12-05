@@ -32,7 +32,7 @@ if(isset($_POST['app-submit']))
   $appdate=$_POST['appdate'];
   $apptime=$_POST['apptime'];
   $cur_date = date("Y-m-d");
-  date_default_timezone_set('Asia/Kolkata');
+  date_default_timezone_set('africa/Nairobi');
   $cur_time = date("H:i:s");
   $apptime1 = strtotime($apptime);
   $appdate1 = strtotime($appdate);
@@ -126,7 +126,7 @@ if(isset($_GET["generate_bill"])){
 
   $content .= '
       <br/>
-      <h2 align ="center"> Global Hospitals</h2></br>
+      <h2 align ="center"> Patient Management</h2></br>
       <h3 align ="center"> Bill</h3>
       
 
@@ -178,19 +178,19 @@ function get_specs(){
     
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
+  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Patient Management </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <style >
     .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left, gold, teal);
 }
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #342ac1;
+    background-color: teal;
     border-color: #007bff;
 }
 .text-primary {
@@ -231,6 +231,7 @@ function get_specs(){
       <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Book Appointment</a>
       <a class="list-group-item list-group-item-action" href="#app-hist" id="list-pat-list" role="tab" data-toggle="list" aria-controls="home">Appointment History</a>
       <a class="list-group-item list-group-item-action" href="#list-pres" id="list-pres-list" role="tab" data-toggle="list" aria-controls="home">Prescriptions</a>
+      <a class="list-group-item list-group-item-action" href="#list-ref" id="list-ref-list" role="tab" data-toggle="list" aria-controls="home">Referrals</a>
       
     </div><br>
   </div>
@@ -276,7 +277,7 @@ function get_specs(){
                 </div>
                 </div>
 
-                <div class="col-sm-4" style="left: 20%;margin-top:5%">
+                <div class="col-sm-3" style="left: 20%;margin-top:5%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
                       <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
@@ -285,6 +286,21 @@ function get_specs(){
                       <p class="cl-effect-1">
                         <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
                           View Prescription List
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3" style="left: 20%;margin-top:5%">
+                  <div class="panel panel-white no-radius text-center">
+                    <div class="panel-body" >
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="margin-top: 5%;">Referrals</h2>
+                    
+                      <p class="cl-effect-1">
+                        <a href="#list-ref" onclick="clickDiv('#list-ref-list')">
+                          View Referrals
                         </a>
                       </p>
                     </div>
@@ -520,6 +536,57 @@ function get_specs(){
               </table>
         <br>
       </div>
+
+      <!-- refer patients' form -->
+
+      <div class="tab-pane fade" id="list-ref" role="tabpanel" aria-labelledby="list-ref-list">
+        
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              
+              <th scope="col">New Doctor Name</th>
+              <th scope="col">Appointment ID</th>
+              <th scope="col">Appointment Date</th>
+              <th scope="col">Appointment Time</th>
+             
+              <th scope="col">Comments</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <?php 
+
+              $con=mysqli_connect("localhost","root","","myhmsdb");
+              global $con;
+
+              $query = "select doctor,ID,appdate,apptime,comments from refer where pid='$pid';";
+              
+              $result = mysqli_query($con,$query);
+              if(!$result){
+                echo mysqli_error($con);
+              }
+              
+
+              while ($row = mysqli_fetch_array($result)){
+            ?>
+                <tr>
+                  <td><?php echo $row['doctor'];?></td>
+                  <td><?php echo $row['ID'];?></td>
+                  <td><?php echo $row['appdate'];?></td>
+                  <td><?php echo $row['apptime'];?></td>
+                  
+                  <td><?php echo $row['comments'];?></td>
+                  <td>              
+                </tr>
+              <?php }
+              ?>
+          </tbody>
+        </table>
+  <br>
+</div>
+
+      <!-- end of referal -->
 
 
 
